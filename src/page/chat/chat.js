@@ -23,7 +23,7 @@ setOnline(res)
   socket.emit('join',uname)
   
 socket.on('show',(res)=>{
-  setMsg(old=>[...old,res])
+  setMsg(res)
   console.log(res)
 });
   },[])
