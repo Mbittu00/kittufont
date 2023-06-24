@@ -45,7 +45,7 @@ socket.on('show',(res)=>{
 <div className='mb'></div>
     </div>
 
-    <Foot/>
+    <Foot socket={socket}/>
     </div> :
     <div className='lodeh'>
     <div className='lode'></div>
