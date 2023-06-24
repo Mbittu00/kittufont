@@ -1,17 +1,12 @@
 import './foot.css';
 import Pic from'../../img/1.png'
 import act from'../../img/attachment.png'
-import io from "socket.io-client";
 import {useEffect,useState}from'react';
-let socket;
-function Foot() {
+
+function Foot({socket}) {
   let [text,setText]=useState('')
   let [base,setBase]=useState('')
   
-  useEffect(()=>{
-  socket=io('https://kittyback.herokuapp.com/')
-
-  },[])
   
   let send=()=>{
     let username=localStorage.getItem('name')
